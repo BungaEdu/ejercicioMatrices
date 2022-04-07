@@ -16,56 +16,46 @@ public class ej1Matrices {
         int años = sc.nextInt();
 
 /*********************LEER PORCENTAJES*/
-        int intereses = 0, i=0;
-        System.out.println("Intereses ( pulsa 0 después del úlimo interés): ");
-        intereses = sc.nextInt();
-        int[] arrayIntereses = new int[100];
-        while (intereses != 0) {
-            arrayIntereses[i]=intereses;
-            intereses = sc.nextInt();
-            i++;
+        int intereses = 0, i = 0, tamArray = 0;
+        System.out.println("Dime cuántos intereses quieres calcular: ");
+        tamArray = sc.nextInt();
+        int[] arrayIntereses = new int[tamArray];
+        System.out.println("Dime los intereses: ");
+        for (i = 0; i < arrayIntereses.length; i++) {
+            arrayIntereses[i] = sc.nextInt();
         }
 
-
-    }
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-/**************************** BUCLE PARA calcular monto final
+/**************************** BUCLE PARA calcular monto final */
         float montoAnual = 0, sumMontoAnual=0;
         montoAnual = montoInicial;
         int[] arrayAños = new int[años];
-        System.out.println((arrayIntereses[0]*100)+"%");
+
+
+        System.out.println((arrayIntereses[0])+"%");
         for (int j = 0; j <= años; j++) {
             System.out.printf("%.2f\n",montoAnual);
-            montoAnual = montoAnual + (montoAnual * arrayIntereses[0]);
+            montoAnual = montoAnual + ((float) montoAnual * arrayIntereses[0]/100);
             sumMontoAnual=sumMontoAnual+montoAnual;
+
         }
-        System.out.println();    // Imprime salto de línea
+        System.out.println();
+
+/***************IMPRIMIR MATRIZ****************/
+        int[][] matriz = {{2, 4, 4}, {6, 6, 9}, {8, 10, 12}};
+        for(int i = 0; i<matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + " ");    // Imprime elemento
+            }
+            System.out.println();    // Imprime salto de línea
+        }
+
+
+
+
     }
 }
-*/
 
 
 
-
-
-
-
-/*******************IMPRIMIR EL ARRAY
-        for(int j=0; j<=4;j++) {
-            System.out.print(arrayIntereses[j]);
-        }*/
 
 
