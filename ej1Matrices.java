@@ -63,6 +63,9 @@ public class ej1Matrices {
 
     }
 }
+
+
+
 /***************IMPRIMIR MATRIZ****************
         int[][] matriz = {{2, 4, 4}, {6, 6, 9}, {8, 10, 12}};
         for(int i = 0; i<matriz.length; i++) {
@@ -75,7 +78,31 @@ public class ej1Matrices {
 
 
 
+/************ejemploProfe para imprimir************
+Arrays.fill (Para la primera fila)
+for(i=1............)
+        for(.........)
+
+//CALCULO INTERESES
+for(i=0......)
+    imprimir intereses ("%13d%c",intereses[i],'%')
+for(i=0, i<long-1)
+    for(j=0.......)
+
+    imprimir calculo("%14.2f",matriz[i])
+for(i=ultimafila)
+    imprimir calculo
+imprimir monto final
+*/
 
 
 
-
+/*****************PUNTUACIÓN*****************************
+Hemos conseguido que la matriz esté bien hecha, calculos y demás 3/3
+si en la impresión he conseguido imprimir bien monto (0/1) y porcentaje (0/1)
+He conseguido controlar duplicados (0/1)
+Sacar los porcentajes ordenados de mayor y menor (0/1)
+controles: capital negativo(0/0,5), tipo de interés negativo(0/0,5), años negativos(0/0,5)
+binarysearh, sort, fil, (0/1,5)
+Entrega(0,5)
+ */
